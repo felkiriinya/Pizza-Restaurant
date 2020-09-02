@@ -1,0 +1,123 @@
+@media screen and (max-width:1024px){
+    .nav-links {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:768px){
+    body{
+        overflow-x: hidden;
+    }
+    .bolder-colored{
+        color: #B3B6B7;
+        font-size: 20px;
+    }
+    .bold-colored{
+        color: #AF9164;
+        font-size: 25px;
+    }
+    .fas.fa-pizza-slice{
+        color: #AF9164;
+        margin-right: 10px;
+        font-size: 25px;
+    
+    }
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 62vh;
+        top: 15vh;
+        background-color: #2B2118;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 25%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        border-radius: 5px;
+        z-index: 1;
+    }
+    nav{
+        overflow: hidden;
+    }
+    header{
+        overflow: hidden;
+    }
+    .nav-links li {
+        opacity: 0;
+    }
+
+    
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .cover{
+        min-height: 140vh;
+    }
+    .span-colored{
+        font-size: 20px;
+    }
+    .spann-colored{
+        font-size: 25px;
+    }
+    .span-color{
+        font-size: 18px;
+    }
+    .spann-color{
+        font-size: 20px;
+    }
+    .card{
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        overflow-y: scroll;
+    }
+    .card-text{
+        font-size: 16px;
+    }
+    .about-description{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .span-about{
+        font-size: 20px;
+    }
+    .about-text{
+        text-align: justify;
+        margin-right: auto;
+        margin-left: auto;
+        word-spacing: 1px;
+    }
+    
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+}
