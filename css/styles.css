@@ -160,9 +160,19 @@ nav{
     top: 0;
     left: 0;
 }
-#menu{
-    
-    padding-right: 10%;
-    padding-left: 20%;
+.menu{
+    padding-right: 12%;
+    padding-left: 12%;
+}
+.heading h2{
     text-align: center;
+    font-size: 50px;
+}
+
+.menu-icon{
+    text-align: center;
+    padding: 20px;
+}
+#size{
+    font-size:  30px;
 }
