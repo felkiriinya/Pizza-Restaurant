@@ -206,18 +206,16 @@ form label{
 select{
     display: block !important;
 }
-.form-check{
-    /* padding: 0px;
-    padding-right:0px; */
-}
+
 h5 {
    /*styling for all h5 elements*/
     color: #FE5A07 
 }
-.col-md-6{
+#col6{
    /*align content in all col-md-5*/
-    text-align: left;
-    padding: 0px;
+    text-align: right;
+    padding: 0;
+    /* margin-right: 2%; */
    
 }
 
@@ -236,4 +234,37 @@ h5 {
 }
 .form-control{
     font-size:16px;
+}
+
+#contactus{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    background-image: url("../images/chad-montano-MqT0asuoIcU-unsplash.jpg");
+    background-size: cover;
+}
+#contactus p{
+    font-size: 20px;
+}
+#contactus img{
+    object-fit: cover;
+    height: auto;
+}
+#contactus .btn{
+    background: transparent !important;
+    color: white;
+    font-weight: bold;
+    padding: 1%;
+    font-size: 20px;
+}
+h3{
+    padding-top: 3%;
+    font-size: 50px;
+    padding-bottom: 2%;
+}
+#message{
+    color: white;
+    background: transparent;
 }
