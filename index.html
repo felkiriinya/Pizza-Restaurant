@@ -323,6 +323,131 @@
         </div>
 
 
+
+    </section>
+    <section id="yourorder">
+        <h3 class="salutation"><b>Here's your order:</b></h3>
+            <div id="orderDetails">
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8">
+                        <table class="table table-sm" id="orderTable">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Flavor</th>
+                                    <th scope="col">Number</th>
+                                    <th scope="col">Size</th>
+                                    <th scope="col">Crust</th>
+                                    <th scope="col">Extra Toppings</th>
+                                    <th scope="col">Total</th>
+                                </tr>
+                            </thead>
+                            <tbody id="ordersmade">
+                                <tr>
+                                    <td class="pizza-flavor"></td>
+                                    <td class="number"></td>
+                                    <td class="pizza-size"></td>
+                                    <td class="pizza-crust"></td>
+                                    <td class="toppings"></td>
+                                    <td class="pizzaTotal1"td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td class="grandtot"td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                        <a href="#ordersection" type="submit" name="addorder" onclick="addOrder()" class="btn  submit" id="addorder">Add Order</a>
+                        <button type="submit" name="checkout" onclick="deliveryOptions()" class="btn submit" id="checkout">Checkout</button>
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+            </div>
+            <div id="deliveryOptions">
+                <i class="fas fa-clock" style="font-size:80px;color:#FE5A07"></i>
+                <br>
+                <br>
+                <p>Your order will be ready in 30 minutes.</p>
+                <p>Would you like to:</p>
+                <button type="submit" name="pickup" onclick="pickUp()" class="btn"><i class="fas fa-store"></i> Pick it Up</button>
+                <button type="submit" name="deliver" onclick="deliver()" class="btn submit"><i class="fas fa-truck"></i> Get it Delivered</button>
+            </div>
+        </div>
+        <div id="delivery">
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <div class="jumbotron">
+                        <form id="deliveryDetails">
+                            <h5>Please fill the following for delivery:</h5>
+                            <div class="form-group">
+                                <div class="form-group">
+                                    <label for="location">Delivery location:</label>
+                                    <input type="text" class="form-control" id="location" placeholder="Street, County" pattern="[a-zA-Z0-9]+" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number:</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+254 123 456789" pattern="[+254]{4} [0-9]{3} [0-9]{6}" required>
+                                <br>
+                                <br>
+                                <small style="font-size: 15px; color: wheat;">Format: +254 123 456789</small>
+                                <br>
+                                <br>
+                            </div>
+                            <button type="submit" class="btn submit" id="delivery-details">Deliver</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+        </div>
+        <div id="pickUpConfirmation">
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <div class="jumbotron">
+                        <i class="fas fa-check-circle" style="font-size:80px;color:green;"></i>
+                        <br>
+                        <br>
+                        <p><div class="name"></div>, your order has been successfully placed!<br><br>Total amount payable at the store on pickup is Ksh.<div class="totalPick"></div>.</p>
+                        <a href="#header" type="button" class="btn" onclick="reloadPage()" id="got-it" style="background-color:green">OK, Got it!</a>
+                    </div>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+        </div>
+        <div id="deliveryConfirmation">
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <div class="jumbotron">
+                        <i class="fas fa-check-circle" style="font-size:80px;color:green;"></i>
+                        <br>
+                        <br>
+                        <p>
+                            <div class="name"></div>, your order has been successfully placed!
+                            <br>
+                            <br>The delivery fee to
+                            <div class="location"></div> is Ksh.200.
+                            <br>
+                            <br>Total amount payable to the courier on delivery is Ksh.
+                            <div class="totalDel"></div>.
+                            <br>
+                            <br>In case there are any changes to your order, we shall reach you on:
+                            <div class="phone"></div>.</p>
+                        <a href="#header" type="button" class="btn" onclick="reloadPage()" id="got-it" style="background-color:green">OK, Got it!</a>
+                    </div>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+
     </section>
     <section class="contact" id="contact">
         <div id="contactus">

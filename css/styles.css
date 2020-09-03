@@ -236,6 +236,42 @@ h5 {
     font-size:16px;
 }
 
+#yourorder{
+    text-align: center;
+    /* display: none; */
+    padding-bottom: 5%;
+}
+table .table-sm th{
+    text-align: center;
+}
+#text{
+    padding-top: 7%;
+    padding-bottom: 5%;
+    padding-left: 0;
+    padding-right: 0;
+}
+#deliveryOptions{
+    /* display: none; */
+    font-size:20px;
+    
+}
+#delivery{
+    /* display: none; */
+    text-align: center;
+    padding: 3% 
+}
+#pickUpConfirmation, #deliveryConfirmation{
+    /* display: none; */
+    font-size:20px;
+    color: wheat;
+    text-align: center;
+}
+div.totalPick, div.name, div.location, div.totalDel, div.phone{
+   /*style how the divs display */
+    display: inline;
+    font-weight: bold;
+}
+
 #contactus{
     width: 100%;
     height: auto;
