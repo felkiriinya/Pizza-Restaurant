@@ -326,7 +326,10 @@
 
     </section>
     <section id="yourorder">
-        <h3 class="salutation"><b>Here's your order:</b></h3>
+        <div class="heading">
+            <h3 class="order-icon"><i class="fas fa-pizza-slice" ></i><span></span></h3>
+            <h2> <span class="bolder-colored">Here's your</span>&ensp;<span class="bold-colored">Order</span> </h2>
+        </div>
             <div id="orderDetails">
                 <div class="row">
                     <div class="col-md-2"></div>
@@ -369,15 +372,27 @@
                     <div class="col-md-2"></div>
                 </div>
             </div>
-            <div id="deliveryOptions">
-                <i class="fas fa-clock" style="font-size:80px;color:#FE5A07"></i>
-                <br>
-                <br>
-                <p>Your order will be ready in 30 minutes.</p>
-                <p>Would you like to:</p>
-                <button type="submit" name="pickup" onclick="pickUp()" class="btn"><i class="fas fa-store"></i> Pick it Up</button>
-                <button type="submit" name="deliver" onclick="deliver()" class="btn submit"><i class="fas fa-truck"></i> Get it Delivered</button>
-            </div>
+            <br>  </br>
+        
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <div class="jumbotron">
+                    <div id="deliveryOptions">
+                        <i class="fas fa-clock" style="font-size:80px;color:#d19438;"></i>
+                        <br>
+                        <br>
+                        <p>Your order will be ready in 30 minutes.</p>
+                        <p>Would you like to:</p>
+                        <button type="submit" name="pickup" onclick="pickUp()" class="btn"><i class="fas fa-store"></i> Pick it Up</button> <br> <br>
+                        <button type="submit" name="deliver" onclick="deliver()" class="btn submit"><i class="fas fa-truck"></i> Get it Delivered</button>
+                    </div>
+                </div>
+            <div class="col-md-4"></div>
+
+            
+            
+        </div>
         </div>
         <div id="delivery">
             <div class="row">

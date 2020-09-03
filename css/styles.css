@@ -228,9 +228,11 @@ h5 {
 .btn {
    /* style all buttons */
     color: #fff;
-    background-color: #FE5A07 !important;
+    background-color: #d19438 !important;
     border-radius: 9px;
     padding: 9px;
+    font-family: 'Concert One', cursive;
+    
 }
 .form-control{
     font-size:16px;
@@ -243,6 +245,7 @@ h5 {
 }
 table .table-sm th{
     text-align: center;
+    font-family:'beyond_the_mountainsregular', sans-serif;
 }
 #text{
     padding-top: 7%;
@@ -253,7 +256,8 @@ table .table-sm th{
 #deliveryOptions{
     /* display: none; */
     font-size:20px;
-    
+    color:white;
+    font-family:'beyond_the_mountainsregular', sans-serif;
 }
 #delivery{
     /* display: none; */
@@ -265,11 +269,13 @@ table .table-sm th{
     font-size:20px;
     color: wheat;
     text-align: center;
+    font-family:'beyond_the_mountainsregular', sans-serif;
 }
 div.totalPick, div.name, div.location, div.totalDel, div.phone{
    /*style how the divs display */
     display: inline;
     font-weight: bold;
+   
 }
 
 #contactus{
