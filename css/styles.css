@@ -32,6 +32,7 @@ nav{
     background-color: #271b15;
     width: 100%;
     font-family: 'Concert One', cursive;
+    
 }
 
 .logo:hover{
@@ -64,6 +65,7 @@ nav{
     background-size: 100%;
     background-attachment: fixed;
     min-height: 90vh;
+    
     
 }
 
@@ -184,6 +186,7 @@ padding-bottom: 5%;
 } */
 #order{
     text-align: center;
+    padding-bottom: 5%;
 }
 .jumbotron{
    /*styling for both jumbotron elements*/
@@ -240,7 +243,7 @@ h5 {
 
 #yourorder{
     text-align: center;
-    /* display: none; */
+    display: none;
     padding-bottom: 5%;
 }
 table .table-sm th{
@@ -254,18 +257,18 @@ table .table-sm th{
     padding-right: 0;
 }
 #deliveryOptions{
-    /* display: none; */
+    display: none;
     font-size:20px;
     color:white;
     font-family:'beyond_the_mountainsregular', sans-serif;
 }
 #delivery{
-    /* display: none; */
+    display: none;
     text-align: center;
     padding: 3% 
 }
 #pickUpConfirmation, #deliveryConfirmation{
-    /* display: none; */
+    display: none;
     font-size:20px;
     color: wheat;
     text-align: center;
