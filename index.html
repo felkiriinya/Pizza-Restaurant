@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     
+    
     <link rel="stylesheet" href="css/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="css/fonts/beyond_the_mountains-webfont.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -24,6 +25,7 @@
             <li> <a href="#menu">menu</a></li>
             <li> <a href="#about">About us</a></li>
             <li> <a href="#contact">Contact us</a></li>
+            <li> <a href="portfolio.html">Portfolio</a></li>
         </ul>
     </nav>
     <section class="cover">
@@ -37,7 +39,7 @@
                     <span class="span-colored">Livraison</span><span class="spann-colored">dePizza</span></h5>
                     <p class="card-text">The <span class="span-color">best</span><span class="spann-color"> fired</span>,
                         wood pizza in town with the freshest and yummiest ingredients.</p>
-                        <a href="#" class="btn btn-primary">Order Now</a>
+                        <a href="#order" class="btn btn-primary">Order Now</a>
                     </div>    
                 
             </div>                 
@@ -189,8 +191,140 @@
 
           </div>
     </section>
+    <section class="order" id="order">
+        <div class="container">
+            <div class="heading">
+                <h3 class="order-icon"><i class="fas fa-pizza-slice" ></i><span></span></h3>
+                <h2> <span class="bolder-colored">Order</span>&ensp;<span class="bold-colored">Here</span> </h2>
+            </div>
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <div class="jumbotron">
+                        <form id="orders">
+                            <div class="form-group">
+                                <label for="name">Your Name:</label>
+                                <input type="text" class="form-control" id="name" placeholder="Name..." pattern="[a-zA-Z ]+" required>
+                            </div>
+                            <h5>Kindly pick the following:</h5>
+                            <div class="form-group">
+                                <label for="pizza-flavor">Pizza flavor</label>
+                                <select class="form-control" id="pizza-flavor" required>
+                                    <option>Bbq Beef</option>
+                                    <option>Chicken Tikka</option>
+                                    <option>Grilled Pork</option>
+                                    <option>Hawaiian</option>
+                                    <option>Margharita</option>
+                                    <option>Marinara</option>
+                                    <option>Mushroom</option>
+                                    <option>Original Veggie</option>
+                                    <option>Oyster</option>
+                                    <option>Pepperoni</option>
+                                    <option>Pulled Pork</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="pizza-size">Pizza size</label>
+                                <select class="form-control" id="pizza-size" required>
+                                    <option>Small</option>
+                                    <option>Medium</option>
+                                    <option>Large</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="pizza-crust">Pizza Crust</label>
+                                <select class="form-control" id="pizza-crust" required>
+                                    <option>Gluten Free</option>
+                                    <option>Hand Tossed</option>
+                                    <option>Original</option>
+                                    <option>Pan</option>
+                                    <option>Stuffed</option>
+                                    <option>Thin</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="pizza-toppings">Extra Toppings</label>
+                                <small id="pizza-toppings-help" class="form-text text-muted">Maximum of 3</small>
+                                <small class="form-text text-muted"><b>S:</b>Ksh.70 <b>M:</b>Ksh.100 <b>L:</b>Ksh.130</small>
+                                <div class="row">
+                                    <!-- <div class="col-md-1"></div> -->
+                                    <div class="col-md-6">
+                                        <div class="form-check">
+                                            <label class="form-check-label" for="bacon">  Bacon</label>
+                                            <input  type="checkbox"  class="form-check-input"name="toppings" value="Bacon" id="bacon">
+                                            
+                                        </div>
+                                        <div class="form-check">
+                                           
+                                            <label class="form-check-label" for="cheddar-cheese">Cheddar Cheese</label>
+                                             <input class="form-check-input" type="checkbox" name="toppings" value="Cheddar cheese" id="cheddar-cheese">
+                                        </div>
+                                        <div class="form-check">
+                                            
+                                            <label class="form-check-label" for="ham">Ham</label>
+                                            <input class="form-check-input" type="checkbox" name="toppings" value="Ham" id="ham">
+                                        </div>
+                                        <div class="form-check">
+                                            
+                                            <label class="form-check-label" for="mozarella-cheese">Mozarella Cheese</label>
+
+                                            <input class="form-check-input" type="checkbox" name="toppings" value="Mozarella cheese" id="mozarella-cheese">
+                                        </div>
+                                        <div class="form-check">
+                                           
+                                            <label class="form-check-label" for="mushrooms">Mushroom</label>
+                                            <input class="form-check-input" type="checkbox" name="toppings" value="Mushrooms" id="mushrooms">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-check">
+                                            
+                                            <label class="form-check-label" for="olives">Olives</label>
+                                            <input class="form-check-input" type="checkbox" name="toppings" value="Olives" id="olives">
+                                        </div>
+                                        <div class="form-check">
+                                            
+                                            <label class="form-check-label" for="onions">Onions</label>
+                                            <input class="form-check-input" type="checkbox" name="toppings" value="Onions" id="onions">
+                                        </div>
+                                        <div class="form-check">
+                                            
+                                            <label class="form-check-label" for="parmesan-cheese">Parmesan Cheese</label>
+                                            <input class="form-check-input" type="checkbox" name="toppings" value="Parmesan cheese" id="parmesan-cheese">
+                                        </div>
+                                        <div class="form-check">
+                                            
+                                            <label class="form-check-label" for="pepperoni">Pepperoni</label>
+                                            <input class="form-check-input" type="checkbox" name="toppings" value="Pepperoni" id="pepperoni">
+                                        </div>
+                                        <div class="form-check">
+                                            
+                                            
+                                            <label class="form-check-label" for="sausage">Sausage</label>
+                                            <input class="form-check-input" type="checkbox" name="toppings" value="Sausage" id="sausage">
+                                        </div>
+                                    </div>
+                                    <!-- <div class="col-md-1"></div> -->
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="pizza-number">Number of Pizzas</label>
+                                <input type="number" id="quantity" name="quantity" >
+                            </div>
+                            <button type="submit" name="submitButton" class="btn submit" id="placeorder">Place Order</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+        </div>
+        </div>
+
+
+    </section>
     
     <script src="js/jquery-3.5.1.js"></script>
+    <!-- <script src="js/mdb.min.js"></script> -->
     <script src="js/bootstrap.js"></script>
     
 </body>

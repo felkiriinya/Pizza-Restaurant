@@ -41,7 +41,7 @@ nav{
 .nav-links{
     display: flex;
     justify-content: space-around;
-    width: 35%;
+    width: 45%;
 }
 .nav-links li{
     list-style: none;
@@ -92,7 +92,7 @@ nav{
     width: 50%;
     display: flex;
     float: left;
-    margin: 20px;
+    margin: 10px;
     
 }
 
@@ -101,7 +101,7 @@ nav{
     background: inherit;
     text-align: center;
     padding: 10px;
-    margin-left: 350px;
+    margin-left: 300px;
     margin-top: 150px;
 }
 
@@ -110,12 +110,12 @@ nav{
 
 .card-text{
     color: #f0f4f5;
-    font-size: 20px;
+    font-size: 30px;
     font-family: 'Concert One', cursive;
 }
 .btn{
     color: #f0f4f5;
-    font-size: 20px;
+    font-size: 25px;
     font-family: 'Concert One', cursive;
     text-align: center;
     justify-content: center;
@@ -171,10 +171,69 @@ nav{
     font-size: 50px;
 }
 
-.menu-icon{
+.menu-icon, .order-icon{
     text-align: center;
     padding: 20px;
 }
 #size{
     font-size:  30px;
+}
+/* .order{
+    
+padding-bottom: 5%;
+} */
+#order{
+    text-align: center;
+}
+.jumbotron{
+   /*styling for both jumbotron elements*/
+    background-image: url('../images/oven.jpg');
+}
+form{
+    padding-left: 13%;
+    padding-right: 13%;
+    text-align: center;
+    /* font-family:  'beyond_the_mountainsregular', sans-serif; */
+}
+.form-control{
+   /*change color of inputs*/
+    color: rgb(27, 26, 26);
+}
+form label{
+    color: white;
+    font-size: 17px;
+}
+select{
+    display: block !important;
+}
+.form-check{
+    /* padding: 0px;
+    padding-right:0px; */
+}
+h5 {
+   /*styling for all h5 elements*/
+    color: #FE5A07 
+}
+.col-md-6{
+   /*align content in all col-md-5*/
+    text-align: left;
+    padding: 0px;
+   
+}
+
+.form-group small{
+   /*style small text in the form*/
+    margin-top: 0 !important;
+    margin-bottom: 8px;
+    font-size: 10px;
+}
+.btn {
+   /* style all buttons */
+    color: #fff;
+    background-color: #FE5A07 !important;
+    border-radius: 9px;
+    padding: 9px;
+}
+.form-control{
+    font-size:16px;
 }
