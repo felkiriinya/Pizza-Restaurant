@@ -257,6 +257,9 @@ table .table-sm th{
     padding-left: 0;
     padding-right: 0;
 }
+#options{
+    display: none;
+}
 #deliveryOptions{
     display: none;
     font-size:20px;
@@ -267,6 +270,9 @@ table .table-sm th{
     display: none;
     text-align: center;
     padding: 3% 
+}
+#deliveryDetails{
+    display: none;
 }
 #pickUpConfirmation, #deliveryConfirmation{
     display: none;

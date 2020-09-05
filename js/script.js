@@ -150,11 +150,24 @@ function makeDelivery() {
 
 
 }
+//USER INTERFACE
+$(document).ready(function(){
+    $("#orders").submit(function(event){
+        event.preventDefault();
+        placeOrder();
+    });
+    $("#deliveryDetails").submit(function(event) {
+        event.preventDefault();
+        makeDelivery();
+    });
+});
+
 
 var arrayTotal = []; //global array used to store all total prices for each order
 
 
 function deliveryOptions(){
+    $("#options").show();
     $("#deliveryOptions").show();
     $("#orderDetails").hide();
     //reseting the form
@@ -163,7 +176,7 @@ function deliveryOptions(){
 
     //Enable the place order button
 
-    // $('#placeorder').prop('disabled', false);
+    $('#placeorder').prop('disabled', false);
 
     var checkoutTotal =0;
     arrayTotal.forEach(function(index){
@@ -178,14 +191,38 @@ function deliveryOptions(){
 
 }
 
-//USER INTERFACE
-$(document).ready(function(){
-    $("#orders").submit(function(event){
-        event.preventDefault();
-        placeOrder();
+
+function pickUp(){
+    $("#pickUpConfirmation").show();
+    $("#yourOrder").hide();
+}
+
+function delivery() {
+    $("#delivery").show();
+    $("#deliveryDetails").show();
+    // $("#yourorder").hide();
+  }
+
+function deliveryConfirm(){
+    $("#deliveryConfirmation").show();
+    $("#yourOrder").hide();
+}  
+   
+  
+  function reloadPage() {
+    location.reload(); //reload contents of page to original status
+  }
+  
+  function clearTextarea() {
+    $("#messageForm").reset(); //reset textarea inputs
+  }
+  
+  function addOrder() {
+    $('#placeorder').prop('disabled', false); //enable button
+    $("input[type='checkbox']").prop({ //enable checkboxes
+        disabled: false
     });
-    $("#deliveryDetails").submit(function(event) {
-        event.preventDefault();
-        makeDelivery();
+    $("input[type='checkbox']").prop({ //uncheck previously checked checkboxes
+        checked: false
     });
-});
+  } 

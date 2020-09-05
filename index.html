@@ -377,7 +377,7 @@
             </div>
             <br>  </br>
         
-        <div class="row">
+        <div class="row" id="options">
             <div class="col-md-4"></div>
             <div class="col-md-4">
                 <div class="jumbotron">
@@ -388,7 +388,7 @@
                         <p>Your order will be ready in 30 minutes.</p>
                         <p>Would you like to:</p>
                         <button type="submit" name="pickup" onclick="pickUp()" class="btn"><i class="fas fa-store"></i> Pick it Up</button> <br> <br>
-                        <button type="submit" name="deliver" onclick="deliver()" class="btn submit"><i class="fas fa-truck"></i> Get it Delivered</button>
+                        <button type="submit" name="deliver" onclick="delivery()" class="btn"><i class="fas fa-truck"></i> Get it Delivered</button>
                     </div>
                 </div>
             <div class="col-md-4"></div>
@@ -407,19 +407,19 @@
                             <div class="form-group">
                                 <div class="form-group">
                                     <label for="location">Delivery location:</label>
-                                    <input type="text" class="form-control" id="location" placeholder="Street, County" pattern="[a-zA-Z0-9]+" required>
+                                    <input type="text" class="form-control" id="location" placeholder="Street, County"  required>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="phone">Phone Number:</label>
-                                <input type="tel" id="phone" name="phone" placeholder="+254 123 456789" pattern="[+254]{4} [0-9]{3} [0-9]{6}" required>
+                                <input type="tel" id="phone" name="phone" placeholder="+254 123 456789"  required>
                                 <br>
                                 <br>
                                 <small style="font-size: 15px; color: wheat;">Format: +254 123 456789</small>
                                 <br>
                                 <br>
                             </div>
-                            <button type="submit" class="btn submit" id="delivery-details">Deliver</button>
+                            <button type="submit" class="btn submit" id="delivery-details" onclick="deliveryConfirm()">Deliver</button>
                         </form>
                     </div>
                 </div>
