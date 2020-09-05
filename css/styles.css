@@ -245,6 +245,7 @@ h5 {
     text-align: center;
     display: none;
     padding-bottom: 5%;
+    padding-top:0%;
 }
 table .table-sm th{
     text-align: center;
