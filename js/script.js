@@ -83,7 +83,7 @@ function placeOrder(){
     var checkboxes= $('input[name="toppings"]:checked').length;
 
     //limit number of checkboxes to 3
-    if(checkboxes<=3){
+    // if(checkboxes<=3){
         if(size === "Small"){
             var toppingsCost = checkboxes * 70;
         }
@@ -93,7 +93,7 @@ function placeOrder(){
         else if(size === "Large"){
             var toppingsCost= checkboxes * 130;
         }
-    }
+    
     //disable unchecked boxes
     $("input[type='checkbox']:not(:checked)").prop({ 
         disabled: true
