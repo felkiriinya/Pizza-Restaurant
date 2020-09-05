@@ -114,7 +114,7 @@ function placeOrder(){
     $(".pizza-crust").append('<tr><td id="pizza-crust">' + crust);
     $(".pizza-flavor").append('<tr><td id="pizza-flavor">' + flavor);
     $(".pizzaTotal1").append('<tr><td id="pizzaTotal1">' + totalPrice);
-    $(".toppings").append('<tr><td id="pizza-toppings">' + toppings);
+    // $(".toppings").append('<tr><td id="pizza-toppings">' + toppings);
 
     //create an array for all total prices
     arrayTotal.push(totalPrice); 
@@ -151,6 +151,32 @@ function makeDelivery() {
 
 }
 
+var arrayTotal = []; //global array used to store all total prices for each order
+
+
+function deliveryOptions(){
+    $("#deliveryOptions").show();
+    $("#orderDetails").hide();
+    //reseting the form
+
+    document.getElementById("orders").reset();
+
+    //Enable the place order button
+
+    // $('#placeorder').prop('disabled', false);
+
+    var checkoutTotal =0;
+    arrayTotal.forEach(function(index){
+        checkoutTotal =checkoutTotal + index;
+    });
+
+    $(".totalPick").text(checkoutTotal);
+
+    var checkoutTotalDel = checkoutTotal +200;
+
+    $(".totalDel").text(checkoutTotalDel);
+
+}
 
 //USER INTERFACE
 $(document).ready(function(){
