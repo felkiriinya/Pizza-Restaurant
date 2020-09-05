@@ -94,10 +94,13 @@ function placeOrder(){
             var toppingsCost= checkboxes * 130;
         }
     }
-    $("input[type='checkbox']:not(:checked)").prop({ //disable unchecked boxes
+    //disable unchecked boxes
+    $("input[type='checkbox']:not(:checked)").prop({ 
         disabled: true
     });
-    $('#placeorder').prop('disabled', true); //deactivate button after order is made to prevent client from changing order once the order is placed    
+
+    //deactivate button after order is made to prevent client from changing order once the order is placed 
+    $('#placeorder').prop('disabled', true);    
     
 //GETTING THE TOTAL AMOUNT
     $("#yourorder").show();
@@ -125,19 +128,38 @@ function placeOrder(){
     }
      else {
       document.getElementById("pizza-toppings-help").innerHTML = "Please select a maximum of 3!";
-      document.getElementById("pizza-toppings-help").style.cssText = 'color:red !important' //overrides previous color styling
+
+      //overrides previous color styling
+      document.getElementById("pizza-toppings-help").style.cssText = 'color:red !important' 
   }
 
-
-
-    
+//ADDING THE MAKE DELIVERY FUNCTION 
+   
                    
 }
+function makeDelivery() {
+    $("#deliveryConfirmation").show;
+
+    //getting user delivery location
+    var location=$("input#location").val();
+    var phone=$("input#phone").val();
+
+    $(".location").text(location);
+    $(".phone").text(phone);
+    $("#delivery").hide();
+
+
+}
+
 
 //USER INTERFACE
 $(document).ready(function(){
     $("#orders").submit(function(event){
         event.preventDefault();
         placeOrder();
+    });
+    $("#deliveryDetails").submit(function(event) {
+        event.preventDefault();
+        makeDelivery();
     });
 });
