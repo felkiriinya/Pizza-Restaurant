@@ -8,14 +8,13 @@
     background-color: #100e17; 
    
   }
-  .introduction{
+.introduction{
       display: flex;
       justify-content: center;
       flex-direction: column;
-     
       padding: 20px;
   }
-  .introduction{
+.introduction{
     text-align: center;
     
 }
@@ -42,24 +41,18 @@
     border-radius: 50%;
 }
 .links{
-    display: flex;
-    
+    display: flex;    
     flex-direction: column;
     align-items: center;
     padding-top: 20px;
     
 } 
-    
-
 .links1{
     
     width:20%;
-    
-    
     margin-bottom: 5px;; 
-     background: rgb(63, 2, 5);
-    background: linear-gradient(90deg, rgb(90, 2, 2) 0%, rgb(121, 9, 9) 35%, rgb(255, 0, 13) 100%);
-    
+    background: rgb(63, 2, 5);
+    background: linear-gradient(90deg, rgb(90, 2, 2) 0%, rgb(121, 9, 9) 35%, rgb(255, 0, 13) 100%);   
     text-align: center;
     line-height: 30px;
     text-decoration: none;
@@ -75,10 +68,10 @@
 }
 .info1{
     width: 700px;
-  height: 300px;
-  font-size: 20px;
-  margin-right: 3%;
-  margin-top: 3%;
+    height: 300px;
+    font-size: 20px;
+    margin-right: 3%;
+    margin-top: 3%;
 }
 .info1 h2{
     text-decoration: underline;
@@ -99,8 +92,6 @@
     display: flex;
     flex-direction: column;
 }
-
-
 .project h2{
     text-align: center;
     font-weight: 400;
@@ -176,9 +167,7 @@
     color:#fff;
     font-size:14px;
     margin-bottom: 5%;
-    /* width: 150px;
-    margin-left: 100%;
-    margin-top: 1%; */
+   
 }
 .form-group input[type=submit]:hover{
     background: #c02c2c;
@@ -190,11 +179,11 @@
     margin-top: 2%;
 }
 .footer{
-    /* padding:15px; */
+    
     background: #100e17;
     width:100%;
     text-align: center;
-    /* margin-top: 30px; */
+    
 }
 
 .footer-links li{
@@ -207,7 +196,7 @@
 
 .footer-links a{
     text-decoration: none;
-    color:#ff008a;
+    color:#ff0000;
     text-align:center;
     padding-left: 10px;
 }
@@ -219,7 +208,6 @@
     
 }
 
-/** Media Queries*/
 
  
 
