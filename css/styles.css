@@ -3,10 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* html,body{
-    background-image: url('../assets/leather_1.png') center center;
-    overflow-x: hidden;
-} */
 
 .bolder-colored{
     color: #B3B6B7;
@@ -65,8 +61,7 @@ nav{
     background-size: 100%;
     background-attachment: fixed;
     min-height: 90vh;
-    
-    
+      
 }
 
 .span-colored{
@@ -106,9 +101,6 @@ nav{
     margin-left: 300px;
     margin-top: 150px;
 }
-
-
-
 
 .card-text{
     color: #f0f4f5;
@@ -180,10 +172,7 @@ nav{
 #size{
     font-size:  30px;
 }
-/* .order{
-    
-padding-bottom: 5%;
-} */
+
 #order{
     text-align: center;
     padding-bottom: 5%;
@@ -196,7 +185,7 @@ form{
     padding-left: 13%;
     padding-right: 13%;
     text-align: center;
-    /* font-family:  'beyond_the_mountainsregular', sans-serif; */
+    
 }
 .form-control{
    /*change color of inputs*/
