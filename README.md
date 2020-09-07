@@ -8,7 +8,8 @@ This is a website for Livraison de pizza.
 - Order: potential customers are able to place an order online by selecting a pizza flavor, size, crust, number of pizzas and any extra toppings of their choice. 
 - Contact Us: this section contains the pizzeria contact details and a feedback section.
 
-![landing]()
+![home](images/home.png)
+![about](images/about.png)
 
 ## Development
 To make advancements/modifications, follow these steps:
