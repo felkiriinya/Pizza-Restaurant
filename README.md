@@ -42,7 +42,7 @@ This project is written in HTML5, CSS, Bootstrap, jQuery and JavaScript.
 
 
 ## Support and contact details
-Should you be unable to access my web application, have any recommendations or questions, feel free to email me; kamaulorna@gmail.com.
+Should you be unable to access my web application, have any recommendations or questions, feel free to email me; felkiriinya@gmail.com.
 
 ## To-do
 1. Track all messages sent in the feedback section
