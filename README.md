@@ -10,6 +10,7 @@ This is a website for Livraison de pizza.
 
 ![home](images/home.png)
 ![about](images/about.png)
+![menu](images/menu.png)
 
 ## Development
 To make advancements/modifications, follow these steps:
